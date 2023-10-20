@@ -1,0 +1,28 @@
+@import "../../assets/style/variables.scss";
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .main__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 941px;
+        margin-bottom: 15px;
+
+        .main__itemBox {
+            box-shadow: 0 4px 12px 0 $color-shadow;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,87 @@
+@import "../../assets/style/variables.scss";
+
+.profile__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    min-height: 498px;
+    padding: 48px 32px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background-color: $color-white;
+    border: 1px solid $color-border-gray;
+    border-radius: 6px;
+    margin-bottom: 100px;
+
+    .profile__title {
+        margin: 0;
+        align-self: center;
+        margin-bottom: 21px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .profile__form {
+        .profile__label {
+            display: flex;
+            flex-direction: column;
+
+            .profile__text {
+                font-size: 14px;
+                line-height: 22px;
+                color: $color-black-text;
+                margin-bottom: 2px;
+            }
+
+            .profile__input {
+                outline: none;
+                padding: 8px 12px;
+                border: 1px solid $color-border-gray;
+                border-radius: 4px;
+            }
+
+            .profile__error {
+                font-size: 12px;
+                line-height: 22px;
+                color: $color-text-error;
+            }
+        }
+
+        .profile__label:last-of-type {
+            margin-bottom: 21px;
+        }
+
+        .profile__label:not(:last-of-type) {
+            margin-bottom: 8px;
+        }
+    }
+
+    .profile__box {
+        
+        .profile__button {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: $color-info;
+            color: $color-white;
+        }
+
+        .profile__successButton {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: $color-active;
+            color: $color-white;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+@import "../../assets/style/variables.scss";
+
+.signUp__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    min-height: 599px;
+    padding: 48px 32px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background-color: $color-white;
+    border: 1px solid $color-border-gray;
+    border-radius: 6px;
+    margin-bottom: 100px;
+
+    .signUp__title {
+        margin: 0;
+        align-self: center;
+        margin-bottom: 21px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .signUp__form {
+        .signUp__label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 8px;
+
+            .signUp__text {
+                font-size: 14px;
+                line-height: 22px;
+                color: $color-black-text;
+                margin-bottom: 2px;
+            }
+
+            .signUp__input {
+                outline: none;
+                padding: 8px 12px;
+                border: 1px solid $color-border-gray;
+                border-radius: 4px;
+            }
+        }
+
+        .signUp__label:nth-of-type(4) {
+            margin-bottom: 29px;
+        }
+
+        .signUp__labelCheck {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 21px;
+
+            .signUp__checkbox {
+                margin-right: 8px;
+                transform: translateY(5px);
+            }
+
+            .signUp__checkText {
+                width: 254px;
+                font-size: 14px;
+                line-height: 22px;
+                color: $color-text-checkbox;
+            }
+
+            .signUp__errorCheckbox {
+                align-self: flex-end;
+                width: 100%;
+                font-size: 12px;
+                line-height: 22px;
+                color: $color-text-error; 
+            }
+        }
+
+        .signUp__labelCheck::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 100%;
+            height: 1px;
+            background-color: $color-line-gray;
+        }
+
+        .signUp__error {
+            font-size: 12px;
+            line-height: 22px;
+            color: $color-text-error;
+        }
+    }
+
+    .signUp__box {
+        margin-bottom: 8px;
+
+        .signUp__button {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 100%;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: $color-info;
+            color: $color-white;
+        }
+    }
+
+    .signUp__info {
+        align-self: center;
+        font-size: 12px;
+        line-height: 20px;
+        color: $color-text-gray;
+
+        .signUp__link {
+            color: $color-info;
+        }
+    }
+}
+
+.SignUp_loggedWrapper {
+    display: flex;
+    width: 500px;
+    min-height: 270px;
+    padding: 48px 32px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background-color: $color-white;
+    border: 1px solid $color-border-gray;
+    border-radius: 6px;
+    margin-bottom: 100px;
+
+    .signUp__loggedBoxOne {
+        width: 150px;
+        margin-right: 20px;
+        background-image: url(../../assets/image/logged.png);
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .signUp__loggedBoxTwo {
+        padding-top: 20px;
+        .signUp__loggedTitle {
+            margin: 0;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+       .signUp__loggedDescr {
+            margin: 0;
+       }
+
+       .signUp__loggedDescr:first-of-type {
+        margin-bottom: 8px;
+       }
+
+       .signUp__loggedLink {
+        color: $color-info;
+       }
+    }
+}

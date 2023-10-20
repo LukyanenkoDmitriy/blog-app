@@ -1,0 +1,113 @@
+@import "../../assets/style/variables.scss";
+
+.main__item {
+    background-color: $color-white;
+    padding: 0 19px 24px 19px;
+
+    .main__info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        margin-bottom: 6px;
+
+        .main__titleBox {
+            display: flex;
+            align-items: center;
+
+            .main__title {
+                text-overflow: ellipsis;
+                margin: 0;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 400;
+                color: $color-info;
+                margin-right: 13px;
+            }
+
+            .main__addLike {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                transform: translateY(3px);
+            }
+
+            .main__addLike:disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+
+            .main__likes {
+                padding-left: 5px;
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+
+        .main__user {
+            display: flex;
+            align-items: center;
+
+            .main__userInfo {
+                display: flex;
+                flex-direction: column;
+                margin-right: 12px;
+
+                .main__userName {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                .main__date {
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: $color-subtext;
+                }
+            }
+
+            .main__iconBox {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+    .main__tags {
+        display: flex;
+        margin-bottom: 4px;
+
+        .main__tag {
+            padding: 2px 6px;
+            border: 1px solid $color-subtext;
+            border-radius: 2px;
+            font-size: 12px;
+            line-height: normal;
+            color: $color-subtext;
+        }
+
+        .main__tag:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+
+    .main__content {
+        max-width: 682px;
+
+        .main__description {
+            margin: 0;
+            font-size: 12px;
+            line-height: 22px;
+            width: 682px;
+            min-height: 22px;
+            max-height: 100px;
+            border: none;
+            resize: vertical;
+            overflow-y: hidden;
+        }
+
+        .main__description::-webkit-resizer {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,158 @@
+@import "../../assets/style/variables.scss";
+
+.article__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+    width: 938px;
+    min-height: 701px;
+    background-color: $color-white;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 48px 32px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    border: 1px solid $color-border-gray;
+    box-shadow: 0px 0.6087964177131653px 2.9332919120788574px 0px rgba(0, 0, 0, 0.02), 
+    0px 1.4630224704742432px 7.049108028411865px 0px rgba(0, 0, 0, 0.03), 
+    0px 2.7547414302825928px 13.272845268249512px 0px rgba(0, 0, 0, 0.04), 
+    0px 4.91398811340332px 23.67648696899414px 0px rgba(0, 0, 0, 0.04), 
+    0px 9.19107437133789px 44.28426742553711px 0px rgba(0, 0, 0, 0.05), 
+    0px 22px 106px 0px rgba(0, 0, 0, 0.07);
+
+    .article__title {
+        align-self: center;
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    .article__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 21px;
+
+        .article__label {
+            display: flex;
+            flex-direction: column;
+
+            .article__subtitle {
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 4px;
+            }
+
+            .article__textarea {
+                outline: none;
+                padding: 8px 12px;
+                border: 1px solid $color-border-gray;
+                border-radius: 4px;
+                resize: none;
+            }
+
+            .article__textareaBody {
+                min-height: 168px;
+                outline: none;
+                padding: 8px 12px;
+                border: 1px solid $color-border-gray;
+                border-radius: 4px;
+                resize: none;
+            }
+        }
+
+        .article__tagsWrapper {
+            display: flex;
+
+            .article__tagsContent {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+                margin-right: 18px;
+
+                .article__tagList {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5px;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .article__tagItem {
+                    display: flex;
+                    flex-direction: column;
+
+                    .article__tagWrapper {
+                        display: flex;
+                        column-gap: 18px;
+
+                        .article__input {
+                            outline: none;
+                            width: 300px;
+                            padding: 8px 12px;
+                            border: 1px solid $color-border-gray;
+                            border-radius: 4px;
+                        }
+    
+                        .article__btnDelete {
+                            padding: 0;
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                            width: 118px;
+                            height: 40px;
+                            padding: 8px 16px;
+                            border: 1px solid $color-text-error;
+                            border-radius: 4px;
+                            color: $color-text-error;
+                        }
+                    }
+
+                    .article__errorTag {
+                        padding-top: 10px;
+                        color: $color-text-error;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .article__btnAddBox {
+                align-self: flex-end;
+
+                .article__btnAdd {
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    width: 118px;
+                    height: 40px;
+                    padding: 8px 16px;
+                    border: 1px solid $color-info;
+                    border-radius: 4px;
+                    color: $color-info;
+                }
+            }
+        }
+
+        .article__btnSend {
+            width: 319px;
+            height: 40px;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 8px 16px;
+            background-color: $color-info;
+            color: $color-white;
+            border-radius: 4px;
+        }
+    }
+
+    .article__error {
+        padding-top: 5px;
+        color: $color-text-error;
+        font-size: 13px;
+    }
+}

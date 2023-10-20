@@ -1,0 +1,102 @@
+@import "../../assets/style/variables.scss";
+
+.header {
+    .header__wrapper {
+        height: 80px;
+        padding: 0 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-white;
+        margin-bottom: 26px;
+
+        .header__box-one {
+            .header__title {
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+            }
+        }
+
+        .header__box-two {
+            .header__content {
+                display: flex;
+                align-items: center;
+                column-gap: 19px;
+
+                .header__button {
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 400;
+                }
+
+                .sign_up {
+                    color: $color-active;
+                    padding: 8px 18px;
+                    border: 1px solid $color-active;
+                    border-radius: 5px;
+                }
+            }
+            
+            .header__userContent {
+                display: flex;
+                column-gap: 27px;
+                align-items: center;
+
+                .header__btnCreate {
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 6px 10px; 
+                    border: 1px solid $color-active;
+                    border-radius: 5px;
+                    color: $color-active;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                .header__btnLogOut {
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 10px 18px;
+                    border: 1px solid $color-text;
+                    border-radius: 5px;
+                    color: $color-text;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                .header__userInfo {
+                    display: flex;
+                    column-gap: 8px;
+                    align-items: center;
+                    
+                    .header__userName {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .header__userImageContent {
+                        display: flex;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+
+                        .header__userIcon {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
